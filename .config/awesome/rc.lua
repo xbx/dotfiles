@@ -99,7 +99,14 @@ myawesomemenu = {
 }
 
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
-                                    { "open terminal", terminal }
+                                    { "open terminal", terminal },
+                                    { "thunar", "thunar" },
+                                    { "chrome", "chromium" },
+                                    { "firefox", "firefox" },
+                                    { "aptana", "aptana" },
+                                    { "pidgin", "pidgin" },
+                                    { "rhythmbox", "rhythmbox" },
+                                    { "gsharkdown", "gsharkdown" }
                                   }
                         })
 
