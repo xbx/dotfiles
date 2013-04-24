@@ -1,17 +1,16 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="robbyrussell"
-#ZSH_THEME="fletcherm"
+ZSH_THEME="essembeh"
+#ZSH_THEME="example"
 #ZSH_THEME="flazz"
-#ZSH_THEME="miloshadzic"
-#ZSH_THEME="pmcgee"
-#ZSH_THEME="pygmalion"
-ZSH_THEME="skaro"
+#ZSH_THEME="funky"
+#ZSH_THEME="gentoo"
+
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
