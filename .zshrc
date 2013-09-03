@@ -5,11 +5,11 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="essembeh"
+#ZSH_THEME="essembeh"
 #ZSH_THEME="example"
 #ZSH_THEME="flazz"
 #ZSH_THEME="funky"
-#ZSH_THEME="gentoo"
+ZSH_THEME="gentoo"
 
 
 # Example aliases
@@ -48,8 +48,10 @@ bindkey "\e[8~" end-of-line # End
 
 # Virtualenvwrapper
 WORKON_HOME=$HOME/virtualenvs
-#source /usr/bin/virtualenvwrapper.sh
+source /usr/bin/virtualenvwrapper.sh
 
 
 unsetopt correct_all
+unsetopt share_history
+
 PATH=$PATH:/home/rbravo/.gem/ruby/1.9.1/bin/:/sbin
