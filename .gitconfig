@@ -1,0 +1,11 @@
+[color]
+	ui = true
+[user]
+	email = rbravo@kiusys.com
+	name = Roberto Bravo
+[core]
+	pager = less -FRSX
+[diff]
+	guitool = meld
+[difftool]
+	prompt = false

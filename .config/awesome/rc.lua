@@ -38,10 +38,10 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
-beautiful.init("/usr/share/awesome/themes/zenburn/theme.lua")
+beautiful.init("/home/rbravo/.config/awesome/themes/custom/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "xterm"
+terminal = "terminator"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -83,7 +83,7 @@ end
 tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    tags[s] = awful.tag({ "term", "dev", "web", " ", "misc" }, s, {layouts[2], layouts[3], layouts[3],layouts[3],layouts[3]})
+    tags[s] = awful.tag({ "term", "dev", "web", " ", "misc" }, s, {layouts[2], layouts[3], layouts[3],layouts[1],layouts[1]})
 end
 -- }}}
 
