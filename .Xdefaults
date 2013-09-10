@@ -1,71 +1,75 @@
-# angvp .Xdefaults
-###################
 Xcursor.theme: Jimmac
 Xft*dpi:        96
 Xft*antialias:  true
 *background:    #121212
 *foreground:    #F6F6F6
+
 !URxvt settings
 URxvt*termName:     xterm-color
-URxvt*font:         xft:Terminus:pixelsize=12:antialias=true
-!URxvt*font:         xft:Monaco:pixelsize=13
+!URxvt*font:         xft:Terminus:pixelsize=11:antialias=true
+!URxvt*font:         xft:DejaVu:pixelsize=11:antialias=true
+URxvt*font:         xft:Monaco:pixelsize=12
+
+!urxvt.font: xft:DejaVu Sans Mono:pixelsize=12
+!urxvt.letterSpace: -1
+
 URxvt.imLocale:     en_US.UTF-8
 URxvt*transparent:  true
 URxvt*shading:      10
 URxvt*scrollBar:    false
 URxvt*geometry:     80x27
 URxvt.cursorBlink:           True
-URxvt*urlLauncher:           firefox 
+URxvt*urlLauncher:           chromium
 URxvt*perl-eXT-common:       selection-autotransform,matcher
 URxvt*matcher.button:        2
-URxvt.tabbed.secondaryScroll: true
-URxvt.tabbed.urlLauncher:     firefox
-URxvt.tabbed.matcher.button:  2
+!URxvt.tabbed.secondaryScroll: true
+!URxvt.tabbed.urlLauncher:     chromium
+!URxvt.tabbed.matcher.button:  2
+!URxvt.letterSpace:   -1
 
-URxvt.saveLines: 9000000
+URxvt.saveLines: 90000
+
+!COLORS 
 
 
+urxvt*foreground: #f2f2f2
+urxvt*background: #101010
 
-## COLORS 
+! Normal
+! color0    black
+! color1    red
+! color2    green
+! color3    yellow
+! color4    blue
+! color5    purple
+! color6    cyan
+! color7    white
 
+urxvt*color0:    #6c6c6c
+urxvt*color1:    #e9897c
+urxvt*color2:    #b6e77d
+urxvt*color3:    #ecebbe
+urxvt*color4:    #a9cdeb
+urxvt*color5:    #ea96eb
+urxvt*color6:    #c9caec
+urxvt*color7:    #dadada
 
-#urxvt*foreground: #f2f2f2
-#urxvt*background: #101010
-#
-#! Normal
-#! color0    black
-#! color1    red
-#! color2    green
-#! color3    yellow
-#! color4    blue
-#! color5    purple
-#! color6    cyan
-#! color7    white
-#
-#urxvt*color0:    #6c6c6c
-#urxvt*color1:    #e9897c
-#urxvt*color2:    #b6e77d
-#urxvt*color3:    #ecebbe
-#urxvt*color4:    #a9cdeb
-#urxvt*color5:    #ea96eb
-#urxvt*color6:    #c9caec
-#urxvt*color7:    #f2f2f2
-#
-#! Light
-#! color8    black
-#! color9    red
-#! color10    green
-#! color11    yellow
-#! color12    blue
-#! color13    purple
-#! color14    cyan
-#! color15    white
-#
-#urxvt*color8:    #747474
-#urxvt*color9:    #f99286
-#urxvt*color10:    #c3f786
-#urxvt*color11:    #fcfbcc
-#urxvt*color12:    #b6defb
-#urxvt*color13:    #fba1fb
-#urxvt*color14:    #d7d9fc
-#urxvt*color15:    #e2e2e2
+! Light
+! color8    black
+! color9    red
+! color10    green
+! color11    yellow
+! color12    blue
+! color13    purple
+! color14    cyan
+! color15    white
+
+urxvt*color8:    #747474
+urxvt*color9:    #f99286
+urxvt*color10:    #c3f786
+urxvt*color11:    #fcfbcc
+urxvt*color12:    #b0d0f0
+urxvt*color13:    #fba1fb
+urxvt*color14:    #d7d9fc
+urxvt*color15:    #eaeaea
+

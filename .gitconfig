@@ -6,6 +6,7 @@
 [core]
 	pager = less -FRSX
 [diff]
+	tool = meld
 	guitool = meld
 [difftool]
 	prompt = false
