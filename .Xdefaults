@@ -6,9 +6,9 @@ Xft*antialias:  true
 
 !URxvt settings
 URxvt*termName:     xterm-color
-!URxvt*font:         xft:Terminus:pixelsize=11:antialias=true
+URxvt*font:         xft:Terminus:pixelsize=11:antialias=true
 !URxvt*font:         xft:DejaVu:pixelsize=11:antialias=true
-URxvt*font:         xft:Monaco:pixelsize=12
+!URxvt*font:         xft:Monaco:pixelsize=12
 
 !urxvt.font: xft:DejaVu Sans Mono:pixelsize=12
 !urxvt.letterSpace: -1
@@ -32,8 +32,8 @@ URxvt.saveLines: 90000
 !COLORS 
 
 
-urxvt*foreground: #f2f2f2
-urxvt*background: #101010
+!urxvt*foreground: #f2f2f2
+!urxvt*background: #101010
 
 ! Normal
 ! color0    black
@@ -46,12 +46,12 @@ urxvt*background: #101010
 ! color7    white
 
 urxvt*color0:    #6c6c6c
-urxvt*color1:    #e9897c
-urxvt*color2:    #b6e77d
-urxvt*color3:    #ecebbe
-urxvt*color4:    #a9cdeb
-urxvt*color5:    #ea96eb
-urxvt*color6:    #c9caec
+!urxvt*color1:    #e9897c
+!urxvt*color2:    #b6e77d
+!urxvt*color3:    #ecebbe
+!urxvt*color4:    #a9cdeb
+!urxvt*color5:    #ea96eb
+!urxvt*color6:    #c9caec
 urxvt*color7:    #dadada
 
 ! Light
@@ -65,11 +65,13 @@ urxvt*color7:    #dadada
 ! color15    white
 
 urxvt*color8:    #747474
-urxvt*color9:    #f99286
-urxvt*color10:    #c3f786
-urxvt*color11:    #fcfbcc
-urxvt*color12:    #b0d0f0
-urxvt*color13:    #fba1fb
-urxvt*color14:    #d7d9fc
+!urxvt*color9:    #f99286
+!urxvt*color10:    #c3f786
+!urxvt*color11:    #fcfbcc
+!urxvt*color12:    #b0d0f0
+!urxvt*color13:    #fba1fb
+!urxvt*color14:    #d7d9fc
 urxvt*color15:    #eaeaea
 
+URxvt*keysym.Home: \033[1~
+URxvt*keysym.End: \033[4~
