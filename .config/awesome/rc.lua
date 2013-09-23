@@ -38,10 +38,10 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
-beautiful.init("/home/rbravo/.config/awesome/themes/custom/theme.lua")
+beautiful.init("/home/rbravo/.config/awesome/themes/default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "terminator"
+terminal = "urxvtc"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -56,15 +56,15 @@ modkey = "Mod4"
 local layouts =
 {
     awful.layout.suit.floating,
-    awful.layout.suit.tile,
+    awful.layout.suit.fair.horizontal,
 --   awful.layout.suit.tile.left,
 --   awful.layout.suit.tile.bottom,
 --    awful.layout.suit.tile.top,
---    awful.layout.suit.fair,
---    awful.layout.suit.fair.horizontal,
---    awful.layout.suit.spiral,
 --    awful.layout.suit.spiral.dwindle,
     awful.layout.suit.max,
+    awful.layout.suit.fair,
+--    awful.layout.suit.spiral,
+--    awful.layout.suit.tile,
 --    awful.layout.suit.max.fullscreen,
 --    awful.layout.suit.magnifier
 }
@@ -83,7 +83,17 @@ end
 tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    tags[s] = awful.tag({ "term", "dev", "web", " ", "misc" }, s, {layouts[2], layouts[3], layouts[3],layouts[1],layouts[1]})
+    tags[s] = awful.tag({ "  [1: term]  ", 
+                          "  [2: dev]  ", 
+                          "  [3: web]  ", 
+                          "  [4: chat]  ", 
+                          "  [5: misc]  " }, 
+                          s, 
+                          {layouts[4], 
+                          layouts[3], 
+                          layouts[3],
+                          layouts[1],
+                          layouts[1]})
 end
 -- }}}
 

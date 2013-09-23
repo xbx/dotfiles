@@ -1,12 +1,10 @@
 Xcursor.theme: Jimmac
 Xft*dpi:        96
 Xft*antialias:  true
-*background:    #121212
-*foreground:    #F6F6F6
 
 !URxvt settings
 URxvt*termName:     xterm-color
-URxvt*font:         xft:Terminus:pixelsize=11:antialias=true
+URxvt*font:         xft:Terminus:pixelsize=12:antialias=true
 !URxvt*font:         xft:DejaVu:pixelsize=11:antialias=true
 !URxvt*font:         xft:Monaco:pixelsize=12
 
@@ -31,47 +29,32 @@ URxvt.saveLines: 90000
 
 !COLORS 
 
+! terminal colors ------------------------------------------------------------
 
-!urxvt*foreground: #f2f2f2
-!urxvt*background: #101010
-
-! Normal
-! color0    black
-! color1    red
-! color2    green
-! color3    yellow
-! color4    blue
-! color5    purple
-! color6    cyan
-! color7    white
-
-urxvt*color0:    #6c6c6c
-!urxvt*color1:    #e9897c
-!urxvt*color2:    #b6e77d
-!urxvt*color3:    #ecebbe
-!urxvt*color4:    #a9cdeb
-!urxvt*color5:    #ea96eb
-!urxvt*color6:    #c9caec
-urxvt*color7:    #dadada
-
-! Light
-! color8    black
-! color9    red
-! color10    green
-! color11    yellow
-! color12    blue
-! color13    purple
-! color14    cyan
-! color15    white
-
-urxvt*color8:    #747474
-!urxvt*color9:    #f99286
-!urxvt*color10:    #c3f786
-!urxvt*color11:    #fcfbcc
-!urxvt*color12:    #b0d0f0
-!urxvt*color13:    #fba1fb
-!urxvt*color14:    #d7d9fc
-urxvt*color15:    #eaeaea
-
-URxvt*keysym.Home: \033[1~
-URxvt*keysym.End: \033[4~
+! tangoesque scheme
+*background: #111111
+*foreground: #bdbdbd
+! Black (not tango) + DarkGrey
+*color0:  #000000
+*color8:  #555753
+! DarkRed + Red
+*color1:  #ff6565
+*color9:  #dc143c
+! DarkGreen + Green
+*color2:  #98fb98
+*color10: #32cd32
+! DarkYellow + Yellow
+*color3:  #eab93d
+*color11: #ffc123
+! DarkBlue + Blue
+*color4:  #204a87
+*color12: #1e90ff
+! DarkMagenta + Magenta
+*color5:  #ce5c00
+*color13: #f57900
+!DarkCyan + Cyan (both not tango)
+*color6:  #89b6e2
+*color14: #46a4ff
+! LightGrey + White
+*color7:  #cccccc
+*color15: #ffffff
