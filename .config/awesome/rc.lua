@@ -64,7 +64,7 @@ local layouts =
     awful.layout.suit.max,
     awful.layout.suit.fair,
 --    awful.layout.suit.spiral,
---    awful.layout.suit.tile,
+    awful.layout.suit.tile,
 --    awful.layout.suit.max.fullscreen,
 --    awful.layout.suit.magnifier
 }
@@ -247,11 +247,27 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "u", awful.client.urgent.jumpto),
     awful.key({ modkey,           }, "Tab",
         function ()
-            awful.client.focus.history.previous()
+            -- awful.client.focus.history.previous()
+            awful.client.focus.byidx(-1)
             if client.focus then
                 client.focus:raise()
             end
         end),
+
+    awful.key({ modkey, "Shift"   }, "Tab",
+        function ()
+            -- awful.client.focus.history.previous()
+            awful.client.focus.byidx(1)
+            if client.focus then
+                client.focus:raise()
+            end
+        end),
+--orig        function ()
+--orig            awful.client.focus.history.previous()
+--orig            if client.focus then
+--orig                client.focus:raise()
+--orig            end
+--orig        end),
 
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
