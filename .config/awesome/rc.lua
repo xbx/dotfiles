@@ -41,7 +41,7 @@ end
 beautiful.init("/home/rbravo/.config/awesome/themes/default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "urxvtc"
+terminal = "terminator"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -83,17 +83,21 @@ end
 tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    tags[s] = awful.tag({ "  [1: term]  ", 
+    tags[s] = awful.tag({ 
+                          "  [1: term]  ", 
                           "  [2: dev]  ", 
                           "  [3: web]  ", 
                           "  [4: chat]  ", 
-                          "  [5: misc]  " }, 
+                          "  [5: misc]  ",
+                          "  [6: remote]  " 
+                        }, 
                           s, 
                           {layouts[4], 
                           layouts[3], 
-                          layouts[3],
+                          layouts[3], 
                           layouts[1],
-                          layouts[1]})
+                          layouts[1],
+                          layouts[4]})
 end
 -- }}}
 
@@ -382,6 +386,8 @@ awful.rules.rules = {
       properties = { floating = true } },
     { rule = { class = "gimp" },
       properties = { floating = true } },
+    { rule = { class = "Wine" },
+      properties = { border_width = 0, floating = true } },
     -- Set Firefox to always map on tags number 2 of screen 1.
     -- { rule = { class = "Firefox" },
     --   properties = { tag = tags[1][2] } },
