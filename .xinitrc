@@ -3,6 +3,7 @@
 setxkbmap es &&
 
 xrandr --output VGA-1 --mode 1920x1080 &&
+xrandr --output LVDS-1 --off &&
 
 #wicd-client &
 #start-pulseaudio-x11 &&
