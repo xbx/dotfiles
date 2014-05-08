@@ -1,0 +1,19 @@
+"xbacklight -inc 5"
+XF86MonBrightnessUp
+
+"xbacklight -dec 5"
+XF86MonBrightnessDown
+
+"synclient TouchpadOff=1"
+  XF86TouchpadOff
+
+"synclient TouchpadOff=0"
+  XF86TouchpadOn
+
+"amixer set Master playback 5+"
+   XF86AudioRaiseVolume
+"amixer set Master playback 5-"
+   XF86AudioLowerVolume
+
+"amixer -D pulse set Master 1+ toggle"
+   XF86AudioMute
