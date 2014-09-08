@@ -2,3 +2,4 @@ evince
 pavucontrol
 arandr
 volwheel
+pm-utils
